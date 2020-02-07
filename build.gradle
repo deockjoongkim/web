@@ -33,7 +33,7 @@ dependencies {
 	compile 'mysql:mysql-connector-java'			// mysql
 	compile 'org.mariadb.jdbc:mariadb-java-client'
 	implementation 'junit:junit:4.12'
-	implementation 'junit:junit:4.12'// mariaDB
+	implementation 'org.junit.vintage:junit-vintage-engine:5.6.0'
 
 
 }
