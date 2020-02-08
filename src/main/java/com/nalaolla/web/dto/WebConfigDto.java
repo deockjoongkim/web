@@ -10,7 +10,7 @@ public class WebConfigDto {
     private String title;
 
     @Builder
-    public WebConfigDto (String title) {
+    public WebConfigDto(String title) {
         this.title = title;
     }
 
