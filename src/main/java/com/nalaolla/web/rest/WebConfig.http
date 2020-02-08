@@ -1,0 +1,7 @@
+# 기본테스트
+POST http://localhost:8080/webconfig
+Content-Type: application/json
+
+< WebConfig.json
+
+###
