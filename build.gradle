@@ -18,6 +18,9 @@ repositories {
     mavenCentral()
 }
 
+//Spring Boot Overriding
+ext['hibernate.version'] = '5.2.11.Final' //추가
+
 dependencies {
     //gradle 3.0 이 나오면서 compile 은 deprecated 되었고, implementation 또는 api 를 써야 한다.
 

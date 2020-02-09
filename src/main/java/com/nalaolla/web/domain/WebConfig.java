@@ -13,7 +13,7 @@ import javax.persistence.Id;
 @NoArgsConstructor(access = AccessLevel.PROTECTED)
 @Getter
 @Entity
-public class WebConfig {
+public class WebConfig extends BaseTimeEntity {
 
     @Id
     @GeneratedValue
@@ -22,9 +22,13 @@ public class WebConfig {
     @Column(length = 100, nullable = false)
     private String title;
 
+    @Column(columnDefinition = "TEXT", nullable = true)
+    private String contents;
+
     @Builder
-    public WebConfig(String title) {
+    public WebConfig(String title, String contents) {
         this.title = title;
+        this.contents = contents;
     }
 
 }
