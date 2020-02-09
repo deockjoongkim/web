@@ -41,7 +41,7 @@ public class WebConfigRepositoryTest {
         //then - 테스트 결과 검증
         WebConfig webConfig = webConfigList.get(0);
         assertThat(webConfig.getTitle(), is("web config title"));
-        assertTrue(webConfig.getModiDate().isAfter(LocalDateTime.now()));
+        assertTrue(webConfig.getModDate().isAfter(LocalDateTime.now()));
         assertTrue(webConfig.getRegDate().isAfter(LocalDateTime.now()));
 
 
