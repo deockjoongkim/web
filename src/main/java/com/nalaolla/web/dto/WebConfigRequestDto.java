@@ -6,12 +6,12 @@ import lombok.*;
 @Getter
 @Setter
 @NoArgsConstructor
-public class WebConfigDto {
+public class WebConfigRequestDto {
     private String title;
     private String contents;
 
     @Builder
-    public WebConfigDto(String title, String contents) {
+    public WebConfigRequestDto(String title, String contents) {
         this.title = title;
         this.contents = contents;
     }
